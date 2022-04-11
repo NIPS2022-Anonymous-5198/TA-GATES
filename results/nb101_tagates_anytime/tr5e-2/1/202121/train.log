@@ -1,0 +1,419 @@
+2022-01-21 15:45:38,660 root                INFO: GPU device = 4
+2022-01-21 15:45:38,660 root                INFO: Load pkl cache from nasbench101.pkl and nasbench101_valid.pkl
+2022-01-21 15:45:38,978 root                INFO: Config: {'arch_network_cfg': {'arch_embedder_cfg': {'gcn_kwargs': {'plus_I': True, 'residual_only': 1}, 'gcn_out_dims': [128, 128, 128, 128, 128], 'backward_gcn_out_dims': [128, 128, 128, 128, 128], 'hid_dim': 96, 'node_embedding_dim': 48, 'op_embedding_dim': 48, 'num_time_steps': 2, 'fb_conversion_dims': [128, 128], 'updateopemb_method': 'concat_ofb', 'updateopemb_dims': [128], 'updateopemb_scale': 0.1, 'b_use_bn': False, 'detach_vinfo': False, 'updateopemb_detach_opemb': True, 'updateopemb_detach_finfo': True, 'symmetry_breaking_method': 'param_zs_add', 'concat_param_zs_as_opemb_dimension': 7, 'concat_param_zs_as_opemb_scale': 1.0, 'mask_nonparametrized_ops': False}, 'arch_embedder_type': 'nb101-fbflow-anytime', 'compare_loss_type': 'margin_linear', 'compare_margin': 0.1, 'mlp_dropout': 0.1, 'mlp_hiddens': [200], 'mlp_out_dim': 1, 'optimizer': {'lr': 0.001, 'type': 'Adam'}, 'scheduler': None}, 'batch_size': 512, 'choose_pair_criterion': 'random', 'compare': False, 'compare_threshold': 0.0, 'epochs': 400, 'max_compare_ratio': 4.0}
+2022-01-21 15:45:53,508 root                INFO: Combined args: Namespace(batch_size=512, cfg_file='cfgs/nb101_cfgs/tagates_anytime.yaml', choose_pair_criterion='random', compare=False, compare_threshold=0.0, epochs=400, eval_only_last=200, gpu=4, load=None, max_compare_ratio=4.0, num_workers=4, report_freq=200, save_every=200, save_predict=None, seed=202121, test_funcs=None, test_only=False, train_dir='nb1shot1_anytime_tagates/tagates_0.05/1/202121', train_pkl='../mynas/data/nasbench-1shot1/nasbench101_anytime_train_1.pkl', train_ratio=0.05, valid_pkl='../mynas/data/nasbench-1shot1/nasbench101_anytime_valid.pkl')
+2022-01-21 15:45:53,525 root                INFO: Train dataset ratio: 0.050
+2022-01-21 15:45:53,527 root                INFO: Number of architectures: train: 364; valid: 7290
+2022-01-21 15:45:57,877 root                INFO: Train: Epoch   1: train loss 0.2208
+2022-01-21 15:46:00,207 root                INFO: Train: Epoch   2: train loss 0.2031
+2022-01-21 15:47:19,583 root                INFO: GPU device = 4
+2022-01-21 15:47:19,584 root                INFO: Load pkl cache from nasbench101.pkl and nasbench101_valid.pkl
+2022-01-21 15:47:19,950 root                INFO: Config: {'arch_network_cfg': {'arch_embedder_cfg': {'gcn_kwargs': {'plus_I': True, 'residual_only': 1}, 'gcn_out_dims': [128, 128, 128, 128, 128], 'backward_gcn_out_dims': [128, 128, 128, 128, 128], 'hid_dim': 96, 'node_embedding_dim': 48, 'op_embedding_dim': 48, 'num_time_steps': 2, 'fb_conversion_dims': [128, 128], 'updateopemb_method': 'concat_ofb', 'updateopemb_dims': [128], 'updateopemb_scale': 0.1, 'b_use_bn': False, 'detach_vinfo': False, 'updateopemb_detach_opemb': True, 'updateopemb_detach_finfo': True, 'symmetry_breaking_method': 'param_zs_add', 'concat_param_zs_as_opemb_dimension': 7, 'concat_param_zs_as_opemb_scale': 1.0, 'mask_nonparametrized_ops': False}, 'arch_embedder_type': 'nb101-fbflow-anytime', 'compare_loss_type': 'margin_linear', 'compare_margin': 0.1, 'mlp_dropout': 0.1, 'mlp_hiddens': [200], 'mlp_out_dim': 1, 'optimizer': {'lr': 0.001, 'type': 'Adam'}, 'scheduler': None}, 'batch_size': 512, 'choose_pair_criterion': 'random', 'compare': False, 'compare_threshold': 0.0, 'epochs': 200, 'max_compare_ratio': 4.0}
+2022-01-21 15:47:33,639 root                INFO: Combined args: Namespace(batch_size=512, cfg_file='cfgs/nb101_cfgs/tagates_anytime.yaml', choose_pair_criterion='random', compare=False, compare_threshold=0.0, epochs=200, eval_only_last=200, gpu=4, load=None, max_compare_ratio=4.0, num_workers=4, report_freq=200, save_every=200, save_predict=None, seed=202121, test_funcs=None, test_only=False, train_dir='nb1shot1_anytime_tagates/tagates_0.05/1/202121', train_pkl='../mynas/data/nasbench-1shot1/nasbench101_anytime_train_1.pkl', train_ratio=0.05, valid_pkl='../mynas/data/nasbench-1shot1/nasbench101_anytime_valid.pkl')
+2022-01-21 15:47:33,648 root                INFO: Train dataset ratio: 0.050
+2022-01-21 15:47:33,648 root                INFO: Number of architectures: train: 364; valid: 7290
+2022-01-21 15:47:36,380 root                INFO: Train: Epoch   1: train loss 0.2208
+2022-01-21 15:47:38,503 root                INFO: Valid: Epoch   1: kendall tau 0.3332 0.1848; loss 0.02999 0.1423
+2022-01-21 15:47:39,070 root                INFO: Train: Epoch   2: train loss 0.2031
+2022-01-21 15:47:41,272 root                INFO: Valid: Epoch   2: kendall tau 0.3345 0.2093; loss 0.02717 0.1306
+2022-01-21 15:47:41,763 root                INFO: Train: Epoch   3: train loss 0.1846
+2022-01-21 15:47:44,145 root                INFO: Valid: Epoch   3: kendall tau 0.3282 0.2329; loss 0.02411 0.117
+2022-01-21 15:47:44,619 root                INFO: Train: Epoch   4: train loss 0.1635
+2022-01-21 15:47:46,848 root                INFO: Valid: Epoch   4: kendall tau 0.3170 0.2380; loss 0.02094 0.1012
+2022-01-21 15:47:47,314 root                INFO: Train: Epoch   5: train loss 0.1377
+2022-01-21 15:47:49,330 root                INFO: Valid: Epoch   5: kendall tau 0.3078 0.2453; loss 0.01832 0.08233
+2022-01-21 15:47:49,809 root                INFO: Train: Epoch   6: train loss 0.1072
+2022-01-21 15:47:52,050 root                INFO: Valid: Epoch   6: kendall tau 0.3021 0.2487; loss 0.01833 0.05864
+2022-01-21 15:47:52,533 root                INFO: Train: Epoch   7: train loss 0.0723
+2022-01-21 15:47:54,440 root                INFO: Valid: Epoch   7: kendall tau 0.2964 0.2539; loss 0.02597 0.0326
+2022-01-21 15:47:54,947 root                INFO: Train: Epoch   8: train loss 0.0412
+2022-01-21 15:47:57,400 root                INFO: Valid: Epoch   8: kendall tau 0.2918 0.2567; loss 0.04495 0.0132
+2022-01-21 15:47:57,849 root                INFO: Train: Epoch   9: train loss 0.0304
+2022-01-21 15:47:59,773 root                INFO: Valid: Epoch   9: kendall tau 0.2909 0.2590; loss 0.06295 0.008791
+2022-01-21 15:48:00,307 root                INFO: Train: Epoch  10: train loss 0.0381
+2022-01-21 15:48:02,655 root                INFO: Valid: Epoch  10: kendall tau 0.2929 0.2627; loss 0.06663 0.01119
+2022-01-21 15:48:03,195 root                INFO: Train: Epoch  11: train loss 0.0426
+2022-01-21 15:48:05,147 root                INFO: Valid: Epoch  11: kendall tau 0.2967 0.2671; loss 0.05804 0.01302
+2022-01-21 15:48:05,699 root                INFO: Train: Epoch  12: train loss 0.0373
+2022-01-21 15:48:08,064 root                INFO: Valid: Epoch  12: kendall tau 0.3030 0.2714; loss 0.04278 0.01343
+2022-01-21 15:48:08,553 root                INFO: Train: Epoch  13: train loss 0.0266
+2022-01-21 15:48:10,858 root                INFO: Valid: Epoch  13: kendall tau 0.3109 0.2759; loss 0.0281 0.01288
+2022-01-21 15:48:11,302 root                INFO: Train: Epoch  14: train loss 0.0178
+2022-01-21 15:48:13,167 root                INFO: Valid: Epoch  14: kendall tau 0.3253 0.2808; loss 0.01972 0.0119
+2022-01-21 15:48:13,933 root                INFO: Train: Epoch  15: train loss 0.0152
+2022-01-21 15:48:16,114 root                INFO: Valid: Epoch  15: kendall tau 0.3352 0.2862; loss 0.01772 0.01091
+2022-01-21 15:48:16,680 root                INFO: Train: Epoch  16: train loss 0.0189
+2022-01-21 15:48:19,130 root                INFO: Valid: Epoch  16: kendall tau 0.3391 0.2920; loss 0.01838 0.01009
+2022-01-21 15:48:19,612 root                INFO: Train: Epoch  17: train loss 0.0228
+2022-01-21 15:48:21,614 root                INFO: Valid: Epoch  17: kendall tau 0.3349 0.2986; loss 0.01889 0.009472
+2022-01-21 15:48:22,186 root                INFO: Train: Epoch  18: train loss 0.0243
+2022-01-21 15:48:24,121 root                INFO: Valid: Epoch  18: kendall tau 0.3309 0.3064; loss 0.01873 0.009038
+2022-01-21 15:48:24,642 root                INFO: Train: Epoch  19: train loss 0.0233
+2022-01-21 15:48:26,858 root                INFO: Valid: Epoch  19: kendall tau 0.3272 0.3143; loss 0.01824 0.008766
+2022-01-21 15:48:27,381 root                INFO: Train: Epoch  20: train loss 0.0215
+2022-01-21 15:48:29,520 root                INFO: Valid: Epoch  20: kendall tau 0.3232 0.3241; loss 0.01784 0.008615
+2022-01-21 15:48:29,986 root                INFO: Train: Epoch  21: train loss 0.0187
+2022-01-21 15:48:32,117 root                INFO: Valid: Epoch  21: kendall tau 0.3195 0.3374; loss 0.01783 0.008546
+2022-01-21 15:48:32,641 root                INFO: Train: Epoch  22: train loss 0.0162
+2022-01-21 15:48:34,621 root                INFO: Valid: Epoch  22: kendall tau 0.3156 0.3506; loss 0.01836 0.008531
+2022-01-21 15:48:35,038 root                INFO: Train: Epoch  23: train loss 0.0146
+2022-01-21 15:48:37,319 root                INFO: Valid: Epoch  23: kendall tau 0.3139 0.3618; loss 0.01949 0.008556
+2022-01-21 15:48:37,868 root                INFO: Train: Epoch  24: train loss 0.0132
+2022-01-21 15:48:40,385 root                INFO: Valid: Epoch  24: kendall tau 0.3136 0.3715; loss 0.02116 0.008609
+2022-01-21 15:48:40,902 root                INFO: Train: Epoch  25: train loss 0.0126
+2022-01-21 15:48:43,055 root                INFO: Valid: Epoch  25: kendall tau 0.3133 0.3806; loss 0.02314 0.008655
+2022-01-21 15:48:43,720 root                INFO: Train: Epoch  26: train loss 0.0127
+2022-01-21 15:48:46,043 root                INFO: Valid: Epoch  26: kendall tau 0.3126 0.3888; loss 0.02503 0.008651
+2022-01-21 15:48:46,580 root                INFO: Train: Epoch  27: train loss 0.0130
+2022-01-21 15:48:48,830 root                INFO: Valid: Epoch  27: kendall tau 0.3120 0.3963; loss 0.02645 0.008572
+2022-01-21 15:48:49,404 root                INFO: Train: Epoch  28: train loss 0.0136
+2022-01-21 15:48:51,853 root                INFO: Valid: Epoch  28: kendall tau 0.3114 0.4035; loss 0.02716 0.008427
+2022-01-21 15:48:52,377 root                INFO: Train: Epoch  29: train loss 0.0136
+2022-01-21 15:48:54,510 root                INFO: Valid: Epoch  29: kendall tau 0.3110 0.4111; loss 0.02711 0.008268
+2022-01-21 15:48:55,049 root                INFO: Train: Epoch  30: train loss 0.0138
+2022-01-21 15:48:57,270 root                INFO: Valid: Epoch  30: kendall tau 0.3101 0.4191; loss 0.02648 0.008162
+2022-01-21 15:48:57,796 root                INFO: Train: Epoch  31: train loss 0.0136
+2022-01-21 15:48:59,973 root                INFO: Valid: Epoch  31: kendall tau 0.3091 0.4272; loss 0.02554 0.008153
+2022-01-21 15:49:00,440 root                INFO: Train: Epoch  32: train loss 0.0133
+2022-01-21 15:49:02,275 root                INFO: Valid: Epoch  32: kendall tau 0.3081 0.4352; loss 0.02453 0.008236
+2022-01-21 15:49:02,816 root                INFO: Train: Epoch  33: train loss 0.0133
+2022-01-21 15:49:04,928 root                INFO: Valid: Epoch  33: kendall tau 0.3069 0.4430; loss 0.02365 0.008352
+2022-01-21 15:49:05,548 root                INFO: Train: Epoch  34: train loss 0.0133
+2022-01-21 15:49:07,491 root                INFO: Valid: Epoch  34: kendall tau 0.3056 0.4502; loss 0.023 0.008418
+2022-01-21 15:49:08,070 root                INFO: Train: Epoch  35: train loss 0.0133
+2022-01-21 15:49:10,569 root                INFO: Valid: Epoch  35: kendall tau 0.3042 0.4567; loss 0.02258 0.008392
+2022-01-21 15:49:11,272 root                INFO: Train: Epoch  36: train loss 0.0135
+2022-01-21 15:49:13,741 root                INFO: Valid: Epoch  36: kendall tau 0.3028 0.4622; loss 0.02239 0.008279
+2022-01-21 15:49:14,650 root                INFO: Train: Epoch  37: train loss 0.0131
+2022-01-21 15:49:17,409 root                INFO: Valid: Epoch  37: kendall tau 0.3013 0.4670; loss 0.02237 0.008138
+2022-01-21 15:49:18,137 root                INFO: Train: Epoch  38: train loss 0.0129
+2022-01-21 15:49:20,030 root                INFO: Valid: Epoch  38: kendall tau 0.2999 0.4713; loss 0.02247 0.008035
+2022-01-21 15:49:20,696 root                INFO: Train: Epoch  39: train loss 0.0123
+2022-01-21 15:49:22,916 root                INFO: Valid: Epoch  39: kendall tau 0.2986 0.4754; loss 0.02262 0.008018
+2022-01-21 15:49:23,543 root                INFO: Train: Epoch  40: train loss 0.0123
+2022-01-21 15:49:25,487 root                INFO: Valid: Epoch  40: kendall tau 0.2972 0.4793; loss 0.02277 0.008093
+2022-01-21 15:49:26,013 root                INFO: Train: Epoch  41: train loss 0.0121
+2022-01-21 15:49:28,168 root                INFO: Valid: Epoch  41: kendall tau 0.2958 0.4830; loss 0.02285 0.008232
+2022-01-21 15:49:28,595 root                INFO: Train: Epoch  42: train loss 0.0121
+2022-01-21 15:49:30,471 root                INFO: Valid: Epoch  42: kendall tau 0.2944 0.4869; loss 0.02282 0.008383
+2022-01-21 15:49:30,956 root                INFO: Train: Epoch  43: train loss 0.0122
+2022-01-21 15:49:33,301 root                INFO: Valid: Epoch  43: kendall tau 0.2930 0.4908; loss 0.02265 0.008503
+2022-01-21 15:49:33,830 root                INFO: Train: Epoch  44: train loss 0.0120
+2022-01-21 15:49:35,848 root                INFO: Valid: Epoch  44: kendall tau 0.2916 0.4948; loss 0.02236 0.008569
+2022-01-21 15:49:36,300 root                INFO: Train: Epoch  45: train loss 0.0121
+2022-01-21 15:49:38,303 root                INFO: Valid: Epoch  45: kendall tau 0.2902 0.4988; loss 0.02199 0.008568
+2022-01-21 15:49:38,783 root                INFO: Train: Epoch  46: train loss 0.0121
+2022-01-21 15:49:40,966 root                INFO: Valid: Epoch  46: kendall tau 0.2889 0.5028; loss 0.02158 0.008521
+2022-01-21 15:49:41,498 root                INFO: Train: Epoch  47: train loss 0.0121
+2022-01-21 15:49:43,794 root                INFO: Valid: Epoch  47: kendall tau 0.2877 0.5068; loss 0.02119 0.008447
+2022-01-21 15:49:44,321 root                INFO: Train: Epoch  48: train loss 0.0121
+2022-01-21 15:49:46,354 root                INFO: Valid: Epoch  48: kendall tau 0.2866 0.5108; loss 0.02086 0.008358
+2022-01-21 15:49:46,957 root                INFO: Train: Epoch  49: train loss 0.0120
+2022-01-21 15:49:49,166 root                INFO: Valid: Epoch  49: kendall tau 0.2855 0.5147; loss 0.02061 0.008278
+2022-01-21 15:49:49,717 root                INFO: Train: Epoch  50: train loss 0.0119
+2022-01-21 15:49:51,900 root                INFO: Valid: Epoch  50: kendall tau 0.2846 0.5185; loss 0.02045 0.008215
+2022-01-21 15:49:52,496 root                INFO: Train: Epoch  51: train loss 0.0120
+2022-01-21 15:49:54,621 root                INFO: Valid: Epoch  51: kendall tau 0.2837 0.5221; loss 0.02038 0.008167
+2022-01-21 15:49:55,270 root                INFO: Train: Epoch  52: train loss 0.0120
+2022-01-21 15:49:57,306 root                INFO: Valid: Epoch  52: kendall tau 0.2829 0.5255; loss 0.02041 0.00814
+2022-01-21 15:49:58,177 root                INFO: Train: Epoch  53: train loss 0.0121
+2022-01-21 15:50:00,554 root                INFO: Valid: Epoch  53: kendall tau 0.2820 0.5287; loss 0.02052 0.00813
+2022-01-21 15:50:01,457 root                INFO: Train: Epoch  54: train loss 0.0117
+2022-01-21 15:50:03,463 root                INFO: Valid: Epoch  54: kendall tau 0.2812 0.5319; loss 0.02071 0.008133
+2022-01-21 15:50:04,161 root                INFO: Train: Epoch  55: train loss 0.0118
+2022-01-21 15:50:06,541 root                INFO: Valid: Epoch  55: kendall tau 0.2806 0.5350; loss 0.02096 0.008148
+2022-01-21 15:50:07,405 root                INFO: Train: Epoch  56: train loss 0.0118
+2022-01-21 15:50:09,681 root                INFO: Valid: Epoch  56: kendall tau 0.2802 0.5380; loss 0.02127 0.008169
+2022-01-21 15:50:10,397 root                INFO: Train: Epoch  57: train loss 0.0116
+2022-01-21 15:50:12,903 root                INFO: Valid: Epoch  57: kendall tau 0.2800 0.5410; loss 0.02157 0.008177
+2022-01-21 15:50:13,430 root                INFO: Train: Epoch  58: train loss 0.0115
+2022-01-21 15:50:15,382 root                INFO: Valid: Epoch  58: kendall tau 0.2800 0.5440; loss 0.02183 0.008172
+2022-01-21 15:50:15,899 root                INFO: Train: Epoch  59: train loss 0.0116
+2022-01-21 15:50:18,406 root                INFO: Valid: Epoch  59: kendall tau 0.2804 0.5471; loss 0.02202 0.008141
+2022-01-21 15:50:19,046 root                INFO: Train: Epoch  60: train loss 0.0117
+2022-01-21 15:50:21,105 root                INFO: Valid: Epoch  60: kendall tau 0.2811 0.5501; loss 0.02211 0.008092
+2022-01-21 15:50:21,723 root                INFO: Train: Epoch  61: train loss 0.0116
+2022-01-21 15:50:24,021 root                INFO: Valid: Epoch  61: kendall tau 0.2821 0.5531; loss 0.02211 0.008027
+2022-01-21 15:50:24,814 root                INFO: Train: Epoch  62: train loss 0.0116
+2022-01-21 15:50:26,837 root                INFO: Valid: Epoch  62: kendall tau 0.2835 0.5562; loss 0.02205 0.00796
+2022-01-21 15:50:27,555 root                INFO: Train: Epoch  63: train loss 0.0115
+2022-01-21 15:50:29,756 root                INFO: Valid: Epoch  63: kendall tau 0.2850 0.5593; loss 0.02195 0.007897
+2022-01-21 15:50:30,479 root                INFO: Train: Epoch  64: train loss 0.0114
+2022-01-21 15:50:32,770 root                INFO: Valid: Epoch  64: kendall tau 0.2863 0.5623; loss 0.02185 0.007848
+2022-01-21 15:50:33,455 root                INFO: Train: Epoch  65: train loss 0.0113
+2022-01-21 15:50:35,858 root                INFO: Valid: Epoch  65: kendall tau 0.2877 0.5653; loss 0.02177 0.00781
+2022-01-21 15:50:36,451 root                INFO: Train: Epoch  66: train loss 0.0115
+2022-01-21 15:50:38,407 root                INFO: Valid: Epoch  66: kendall tau 0.2890 0.5685; loss 0.02174 0.007786
+2022-01-21 15:50:38,893 root                INFO: Train: Epoch  67: train loss 0.0114
+2022-01-21 15:50:41,177 root                INFO: Valid: Epoch  67: kendall tau 0.2902 0.5717; loss 0.02176 0.007776
+2022-01-21 15:50:41,689 root                INFO: Train: Epoch  68: train loss 0.0115
+2022-01-21 15:50:43,542 root                INFO: Valid: Epoch  68: kendall tau 0.2915 0.5750; loss 0.02182 0.007775
+2022-01-21 15:50:44,095 root                INFO: Train: Epoch  69: train loss 0.0114
+2022-01-21 15:50:46,305 root                INFO: Valid: Epoch  69: kendall tau 0.2928 0.5784; loss 0.02188 0.00778
+2022-01-21 15:50:46,769 root                INFO: Train: Epoch  70: train loss 0.0114
+2022-01-21 15:50:48,765 root                INFO: Valid: Epoch  70: kendall tau 0.2941 0.5819; loss 0.02194 0.00779
+2022-01-21 15:50:49,233 root                INFO: Train: Epoch  71: train loss 0.0114
+2022-01-21 15:50:51,136 root                INFO: Valid: Epoch  71: kendall tau 0.2956 0.5855; loss 0.02194 0.007796
+2022-01-21 15:50:51,949 root                INFO: Train: Epoch  72: train loss 0.0114
+2022-01-21 15:50:53,811 root                INFO: Valid: Epoch  72: kendall tau 0.2975 0.5894; loss 0.0219 0.007796
+2022-01-21 15:50:54,398 root                INFO: Train: Epoch  73: train loss 0.0112
+2022-01-21 15:50:56,500 root                INFO: Valid: Epoch  73: kendall tau 0.2996 0.5933; loss 0.02178 0.007785
+2022-01-21 15:50:57,141 root                INFO: Train: Epoch  74: train loss 0.0112
+2022-01-21 15:50:59,033 root                INFO: Valid: Epoch  74: kendall tau 0.3020 0.5974; loss 0.02162 0.007766
+2022-01-21 15:50:59,540 root                INFO: Train: Epoch  75: train loss 0.0113
+2022-01-21 15:51:01,653 root                INFO: Valid: Epoch  75: kendall tau 0.3043 0.6016; loss 0.02144 0.007743
+2022-01-21 15:51:02,169 root                INFO: Train: Epoch  76: train loss 0.0110
+2022-01-21 15:51:04,133 root                INFO: Valid: Epoch  76: kendall tau 0.3066 0.6058; loss 0.02129 0.007725
+2022-01-21 15:51:04,611 root                INFO: Train: Epoch  77: train loss 0.0113
+2022-01-21 15:51:06,819 root                INFO: Valid: Epoch  77: kendall tau 0.3087 0.6101; loss 0.02115 0.007711
+2022-01-21 15:51:07,260 root                INFO: Train: Epoch  78: train loss 0.0112
+2022-01-21 15:51:09,224 root                INFO: Valid: Epoch  78: kendall tau 0.3109 0.6146; loss 0.02106 0.007705
+2022-01-21 15:51:09,705 root                INFO: Train: Epoch  79: train loss 0.0108
+2022-01-21 15:51:11,981 root                INFO: Valid: Epoch  79: kendall tau 0.3131 0.6194; loss 0.021 0.007703
+2022-01-21 15:51:12,490 root                INFO: Train: Epoch  80: train loss 0.0109
+2022-01-21 15:51:14,452 root                INFO: Valid: Epoch  80: kendall tau 0.3151 0.6242; loss 0.02097 0.007704
+2022-01-21 15:51:14,932 root                INFO: Train: Epoch  81: train loss 0.0110
+2022-01-21 15:51:17,090 root                INFO: Valid: Epoch  81: kendall tau 0.3170 0.6289; loss 0.02097 0.007711
+2022-01-21 15:51:17,561 root                INFO: Train: Epoch  82: train loss 0.0111
+2022-01-21 15:51:19,443 root                INFO: Valid: Epoch  82: kendall tau 0.3192 0.6335; loss 0.02094 0.007712
+2022-01-21 15:51:19,984 root                INFO: Train: Epoch  83: train loss 0.0109
+2022-01-21 15:51:22,127 root                INFO: Valid: Epoch  83: kendall tau 0.3217 0.6379; loss 0.02088 0.007697
+2022-01-21 15:51:22,640 root                INFO: Train: Epoch  84: train loss 0.0108
+2022-01-21 15:51:24,562 root                INFO: Valid: Epoch  84: kendall tau 0.3242 0.6421; loss 0.02076 0.007667
+2022-01-21 15:51:25,145 root                INFO: Train: Epoch  85: train loss 0.0108
+2022-01-21 15:51:27,333 root                INFO: Valid: Epoch  85: kendall tau 0.3269 0.6461; loss 0.02066 0.007633
+2022-01-21 15:51:27,801 root                INFO: Train: Epoch  86: train loss 0.0109
+2022-01-21 15:51:29,785 root                INFO: Valid: Epoch  86: kendall tau 0.3294 0.6497; loss 0.02058 0.007605
+2022-01-21 15:51:30,313 root                INFO: Train: Epoch  87: train loss 0.0106
+2022-01-21 15:51:32,484 root                INFO: Valid: Epoch  87: kendall tau 0.3314 0.6529; loss 0.02053 0.007581
+2022-01-21 15:51:32,928 root                INFO: Train: Epoch  88: train loss 0.0107
+2022-01-21 15:51:34,968 root                INFO: Valid: Epoch  88: kendall tau 0.3342 0.6553; loss 0.02038 0.007528
+2022-01-21 15:51:35,466 root                INFO: Train: Epoch  89: train loss 0.0105
+2022-01-21 15:51:37,701 root                INFO: Valid: Epoch  89: kendall tau 0.3368 0.6567; loss 0.0202 0.007474
+2022-01-21 15:51:38,244 root                INFO: Train: Epoch  90: train loss 0.0105
+2022-01-21 15:51:40,223 root                INFO: Valid: Epoch  90: kendall tau 0.3386 0.6574; loss 0.02014 0.007447
+2022-01-21 15:51:40,886 root                INFO: Train: Epoch  91: train loss 0.0104
+2022-01-21 15:51:42,990 root                INFO: Valid: Epoch  91: kendall tau 0.3399 0.6572; loss 0.02017 0.007436
+2022-01-21 15:51:43,655 root                INFO: Train: Epoch  92: train loss 0.0105
+2022-01-21 15:51:45,865 root                INFO: Valid: Epoch  92: kendall tau 0.3413 0.6558; loss 0.02018 0.007423
+2022-01-21 15:51:46,490 root                INFO: Train: Epoch  93: train loss 0.0103
+2022-01-21 15:51:48,723 root                INFO: Valid: Epoch  93: kendall tau 0.3426 0.6530; loss 0.02016 0.007407
+2022-01-21 15:51:49,183 root                INFO: Train: Epoch  94: train loss 0.0102
+2022-01-21 15:51:51,153 root                INFO: Valid: Epoch  94: kendall tau 0.3449 0.6490; loss 0.01999 0.007368
+2022-01-21 15:51:51,624 root                INFO: Train: Epoch  95: train loss 0.0102
+2022-01-21 15:51:53,371 root                INFO: Valid: Epoch  95: kendall tau 0.3475 0.6447; loss 0.01979 0.007335
+2022-01-21 15:51:54,406 root                INFO: Train: Epoch  96: train loss 0.0100
+2022-01-21 15:51:56,309 root                INFO: Valid: Epoch  96: kendall tau 0.3503 0.6389; loss 0.01955 0.007296
+2022-01-21 15:51:56,931 root                INFO: Train: Epoch  97: train loss 0.0099
+2022-01-21 15:51:59,233 root                INFO: Valid: Epoch  97: kendall tau 0.3523 0.6323; loss 0.01937 0.007277
+2022-01-21 15:51:59,821 root                INFO: Train: Epoch  98: train loss 0.0100
+2022-01-21 15:52:01,794 root                INFO: Valid: Epoch  98: kendall tau 0.3541 0.6253; loss 0.01926 0.007273
+2022-01-21 15:52:02,373 root                INFO: Train: Epoch  99: train loss 0.0098
+2022-01-21 15:52:04,314 root                INFO: Valid: Epoch  99: kendall tau 0.3562 0.6178; loss 0.0192 0.007282
+2022-01-21 15:52:04,832 root                INFO: Train: Epoch 100: train loss 0.0098
+2022-01-21 15:52:06,982 root                INFO: Valid: Epoch 100: kendall tau 0.3597 0.6104; loss 0.01905 0.007286
+2022-01-21 15:52:07,554 root                INFO: Train: Epoch 101: train loss 0.0098
+2022-01-21 15:52:09,705 root                INFO: Valid: Epoch 101: kendall tau 0.3659 0.6035; loss 0.0187 0.00727
+2022-01-21 15:52:10,373 root                INFO: Train: Epoch 102: train loss 0.0096
+2022-01-21 15:52:12,610 root                INFO: Valid: Epoch 102: kendall tau 0.3721 0.5972; loss 0.01844 0.007271
+2022-01-21 15:52:13,176 root                INFO: Train: Epoch 103: train loss 0.0097
+2022-01-21 15:52:15,445 root                INFO: Valid: Epoch 103: kendall tau 0.3773 0.5912; loss 0.01829 0.007288
+2022-01-21 15:52:15,955 root                INFO: Train: Epoch 104: train loss 0.0096
+2022-01-21 15:52:17,893 root                INFO: Valid: Epoch 104: kendall tau 0.3842 0.5849; loss 0.018 0.007294
+2022-01-21 15:52:18,463 root                INFO: Train: Epoch 105: train loss 0.0095
+2022-01-21 15:52:20,800 root                INFO: Valid: Epoch 105: kendall tau 0.3898 0.5785; loss 0.0179 0.00732
+2022-01-21 15:52:21,363 root                INFO: Train: Epoch 106: train loss 0.0096
+2022-01-21 15:52:23,360 root                INFO: Valid: Epoch 106: kendall tau 0.3968 0.5711; loss 0.01759 0.007327
+2022-01-21 15:52:23,876 root                INFO: Train: Epoch 107: train loss 0.0094
+2022-01-21 15:52:26,038 root                INFO: Valid: Epoch 107: kendall tau 0.4016 0.5643; loss 0.01752 0.007351
+2022-01-21 15:52:26,528 root                INFO: Train: Epoch 108: train loss 0.0095
+2022-01-21 15:52:28,559 root                INFO: Valid: Epoch 108: kendall tau 0.4057 0.5572; loss 0.01752 0.007382
+2022-01-21 15:52:28,984 root                INFO: Train: Epoch 109: train loss 0.0094
+2022-01-21 15:52:31,145 root                INFO: Valid: Epoch 109: kendall tau 0.4125 0.5487; loss 0.01714 0.007382
+2022-01-21 15:52:31,690 root                INFO: Train: Epoch 110: train loss 0.0093
+2022-01-21 15:52:33,601 root                INFO: Valid: Epoch 110: kendall tau 0.4164 0.5410; loss 0.01705 0.007399
+2022-01-21 15:52:34,092 root                INFO: Train: Epoch 111: train loss 0.0094
+2022-01-21 15:52:36,327 root                INFO: Valid: Epoch 111: kendall tau 0.4173 0.5345; loss 0.01723 0.007428
+2022-01-21 15:52:36,842 root                INFO: Train: Epoch 112: train loss 0.0092
+2022-01-21 15:52:38,842 root                INFO: Valid: Epoch 112: kendall tau 0.4213 0.5276; loss 0.01694 0.007424
+2022-01-21 15:52:39,468 root                INFO: Train: Epoch 113: train loss 0.0091
+2022-01-21 15:52:41,717 root                INFO: Valid: Epoch 113: kendall tau 0.4258 0.5212; loss 0.01659 0.007438
+2022-01-21 15:52:42,303 root                INFO: Train: Epoch 114: train loss 0.0092
+2022-01-21 15:52:44,258 root                INFO: Valid: Epoch 114: kendall tau 0.4257 0.5171; loss 0.01679 0.007439
+2022-01-21 15:52:44,712 root                INFO: Train: Epoch 115: train loss 0.0092
+2022-01-21 15:52:47,293 root                INFO: Valid: Epoch 115: kendall tau 0.4270 0.5130; loss 0.01675 0.007446
+2022-01-21 15:52:47,767 root                INFO: Train: Epoch 116: train loss 0.0093
+2022-01-21 15:52:50,051 root                INFO: Valid: Epoch 116: kendall tau 0.4303 0.5079; loss 0.01639 0.007443
+2022-01-21 15:52:50,538 root                INFO: Train: Epoch 117: train loss 0.0089
+2022-01-21 15:52:52,765 root                INFO: Valid: Epoch 117: kendall tau 0.4323 0.5041; loss 0.01623 0.007443
+2022-01-21 15:52:53,387 root                INFO: Train: Epoch 118: train loss 0.0091
+2022-01-21 15:52:55,281 root                INFO: Valid: Epoch 118: kendall tau 0.4327 0.5010; loss 0.01632 0.007439
+2022-01-21 15:52:55,841 root                INFO: Train: Epoch 119: train loss 0.0091
+2022-01-21 15:52:58,053 root                INFO: Valid: Epoch 119: kendall tau 0.4335 0.4985; loss 0.01622 0.007431
+2022-01-21 15:52:58,834 root                INFO: Train: Epoch 120: train loss 0.0089
+2022-01-21 15:53:01,217 root                INFO: Valid: Epoch 120: kendall tau 0.4344 0.4956; loss 0.01585 0.00741
+2022-01-21 15:53:01,845 root                INFO: Train: Epoch 121: train loss 0.0088
+2022-01-21 15:53:04,223 root                INFO: Valid: Epoch 121: kendall tau 0.4341 0.4944; loss 0.01567 0.007388
+2022-01-21 15:53:04,896 root                INFO: Train: Epoch 122: train loss 0.0090
+2022-01-21 15:53:07,164 root                INFO: Valid: Epoch 122: kendall tau 0.4323 0.4943; loss 0.01583 0.007368
+2022-01-21 15:53:07,662 root                INFO: Train: Epoch 123: train loss 0.0085
+2022-01-21 15:53:10,138 root                INFO: Valid: Epoch 123: kendall tau 0.4319 0.4920; loss 0.01543 0.007329
+2022-01-21 15:53:10,629 root                INFO: Train: Epoch 124: train loss 0.0087
+2022-01-21 15:53:12,614 root                INFO: Valid: Epoch 124: kendall tau 0.4302 0.4910; loss 0.01533 0.007292
+2022-01-21 15:53:13,235 root                INFO: Train: Epoch 125: train loss 0.0086
+2022-01-21 15:53:15,679 root                INFO: Valid: Epoch 125: kendall tau 0.4284 0.4903; loss 0.01532 0.007263
+2022-01-21 15:53:16,214 root                INFO: Train: Epoch 126: train loss 0.0084
+2022-01-21 15:53:18,266 root                INFO: Valid: Epoch 126: kendall tau 0.4274 0.4876; loss 0.01501 0.007215
+2022-01-21 15:53:18,846 root                INFO: Train: Epoch 127: train loss 0.0084
+2022-01-21 15:53:21,009 root                INFO: Valid: Epoch 127: kendall tau 0.4259 0.4851; loss 0.01476 0.007162
+2022-01-21 15:53:21,549 root                INFO: Train: Epoch 128: train loss 0.0083
+2022-01-21 15:53:23,655 root                INFO: Valid: Epoch 128: kendall tau 0.4246 0.4827; loss 0.01477 0.007125
+2022-01-21 15:53:24,167 root                INFO: Train: Epoch 129: train loss 0.0082
+2022-01-21 15:53:26,335 root                INFO: Valid: Epoch 129: kendall tau 0.4233 0.4804; loss 0.01446 0.007047
+2022-01-21 15:53:26,909 root                INFO: Train: Epoch 130: train loss 0.0080
+2022-01-21 15:53:29,033 root                INFO: Valid: Epoch 130: kendall tau 0.4221 0.4776; loss 0.01422 0.006966
+2022-01-21 15:53:29,599 root                INFO: Train: Epoch 131: train loss 0.0079
+2022-01-21 15:53:31,796 root                INFO: Valid: Epoch 131: kendall tau 0.4218 0.4731; loss 0.01425 0.006902
+2022-01-21 15:53:32,244 root                INFO: Train: Epoch 132: train loss 0.0077
+2022-01-21 15:53:34,282 root                INFO: Valid: Epoch 132: kendall tau 0.4228 0.4681; loss 0.014 0.006809
+2022-01-21 15:53:34,796 root                INFO: Train: Epoch 133: train loss 0.0075
+2022-01-21 15:53:36,970 root                INFO: Valid: Epoch 133: kendall tau 0.4251 0.4627; loss 0.01378 0.006712
+2022-01-21 15:53:37,483 root                INFO: Train: Epoch 134: train loss 0.0074
+2022-01-21 15:53:39,433 root                INFO: Valid: Epoch 134: kendall tau 0.4284 0.4543; loss 0.01394 0.006658
+2022-01-21 15:53:39,988 root                INFO: Train: Epoch 135: train loss 0.0071
+2022-01-21 15:53:42,116 root                INFO: Valid: Epoch 135: kendall tau 0.4315 0.4527; loss 0.01315 0.006498
+2022-01-21 15:53:42,570 root                INFO: Train: Epoch 136: train loss 0.0069
+2022-01-21 15:53:44,329 root                INFO: Valid: Epoch 136: kendall tau 0.4354 0.4412; loss 0.01327 0.006434
+2022-01-21 15:53:44,932 root                INFO: Train: Epoch 137: train loss 0.0068
+2022-01-21 15:53:47,010 root                INFO: Valid: Epoch 137: kendall tau 0.4391 0.4289; loss 0.01314 0.006346
+2022-01-21 15:53:47,588 root                INFO: Train: Epoch 138: train loss 0.0065
+2022-01-21 15:53:49,501 root                INFO: Valid: Epoch 138: kendall tau 0.4416 0.4155; loss 0.0129 0.006228
+2022-01-21 15:53:50,037 root                INFO: Train: Epoch 139: train loss 0.0064
+2022-01-21 15:53:52,127 root                INFO: Valid: Epoch 139: kendall tau 0.4448 0.4020; loss 0.01341 0.006233
+2022-01-21 15:53:52,672 root                INFO: Train: Epoch 140: train loss 0.0062
+2022-01-21 15:53:54,677 root                INFO: Valid: Epoch 140: kendall tau 0.4441 0.4058; loss 0.01278 0.006063
+2022-01-21 15:53:55,237 root                INFO: Train: Epoch 141: train loss 0.0061
+2022-01-21 15:53:57,366 root                INFO: Valid: Epoch 141: kendall tau 0.4470 0.3950; loss 0.01362 0.006106
+2022-01-21 15:53:57,850 root                INFO: Train: Epoch 142: train loss 0.0059
+2022-01-21 15:53:59,837 root                INFO: Valid: Epoch 142: kendall tau 0.4468 0.4051; loss 0.01316 0.005959
+2022-01-21 15:54:00,281 root                INFO: Train: Epoch 143: train loss 0.0057
+2022-01-21 15:54:02,557 root                INFO: Valid: Epoch 143: kendall tau 0.4482 0.4095; loss 0.01314 0.005919
+2022-01-21 15:54:03,094 root                INFO: Train: Epoch 144: train loss 0.0054
+2022-01-21 15:54:05,155 root                INFO: Valid: Epoch 144: kendall tau 0.4504 0.4023; loss 0.01356 0.006019
+2022-01-21 15:54:05,743 root                INFO: Train: Epoch 145: train loss 0.0053
+2022-01-21 15:54:07,718 root                INFO: Valid: Epoch 145: kendall tau 0.4495 0.4191; loss 0.01298 0.006048
+2022-01-21 15:54:08,385 root                INFO: Train: Epoch 146: train loss 0.0051
+2022-01-21 15:54:10,746 root                INFO: Valid: Epoch 146: kendall tau 0.4539 0.3932; loss 0.0135 0.006085
+2022-01-21 15:54:11,408 root                INFO: Train: Epoch 147: train loss 0.0049
+2022-01-21 15:54:13,204 root                INFO: Valid: Epoch 147: kendall tau 0.4504 0.4493; loss 0.01262 0.006406
+2022-01-21 15:54:13,827 root                INFO: Train: Epoch 148: train loss 0.0051
+2022-01-21 15:54:16,132 root                INFO: Valid: Epoch 148: kendall tau 0.4585 0.3666; loss 0.01427 0.006306
+2022-01-21 15:54:16,868 root                INFO: Train: Epoch 149: train loss 0.0049
+2022-01-21 15:54:19,163 root                INFO: Valid: Epoch 149: kendall tau 0.4582 0.3779; loss 0.01355 0.006447
+2022-01-21 15:54:19,873 root                INFO: Train: Epoch 150: train loss 0.0047
+2022-01-21 15:54:21,882 root                INFO: Valid: Epoch 150: kendall tau 0.4578 0.4197; loss 0.01269 0.006741
+2022-01-21 15:54:22,384 root                INFO: Train: Epoch 151: train loss 0.0046
+2022-01-21 15:54:24,625 root                INFO: Valid: Epoch 151: kendall tau 0.4656 0.4059; loss 0.01327 0.006362
+2022-01-21 15:54:25,140 root                INFO: Train: Epoch 152: train loss 0.0045
+2022-01-21 15:54:27,130 root                INFO: Valid: Epoch 152: kendall tau 0.4696 0.4300; loss 0.01344 0.006366
+2022-01-21 15:54:27,632 root                INFO: Train: Epoch 153: train loss 0.0047
+2022-01-21 15:54:29,603 root                INFO: Valid: Epoch 153: kendall tau 0.4640 0.4913; loss 0.01192 0.006913
+2022-01-21 15:54:30,124 root                INFO: Train: Epoch 154: train loss 0.0045
+2022-01-21 15:54:32,470 root                INFO: Valid: Epoch 154: kendall tau 0.4647 0.4798; loss 0.01192 0.007225
+2022-01-21 15:54:33,360 root                INFO: Train: Epoch 155: train loss 0.0046
+2022-01-21 15:54:35,428 root                INFO: Valid: Epoch 155: kendall tau 0.4728 0.4454; loss 0.0132 0.006707
+2022-01-21 15:54:35,995 root                INFO: Train: Epoch 156: train loss 0.0046
+2022-01-21 15:54:38,088 root                INFO: Valid: Epoch 156: kendall tau 0.4774 0.4857; loss 0.01363 0.006251
+2022-01-21 15:54:38,703 root                INFO: Train: Epoch 157: train loss 0.0044
+2022-01-21 15:54:40,983 root                INFO: Valid: Epoch 157: kendall tau 0.4766 0.5170; loss 0.01248 0.005941
+2022-01-21 15:54:41,548 root                INFO: Train: Epoch 158: train loss 0.0042
+2022-01-21 15:54:43,578 root                INFO: Valid: Epoch 158: kendall tau 0.4746 0.5192; loss 0.01167 0.006004
+2022-01-21 15:54:44,130 root                INFO: Train: Epoch 159: train loss 0.0042
+2022-01-21 15:54:46,215 root                INFO: Valid: Epoch 159: kendall tau 0.4746 0.5110; loss 0.01171 0.00587
+2022-01-21 15:54:46,979 root                INFO: Train: Epoch 160: train loss 0.0042
+2022-01-21 15:54:48,953 root                INFO: Valid: Epoch 160: kendall tau 0.4763 0.4994; loss 0.01245 0.00566
+2022-01-21 15:54:49,531 root                INFO: Train: Epoch 161: train loss 0.0041
+2022-01-21 15:54:51,595 root                INFO: Valid: Epoch 161: kendall tau 0.4761 0.4912; loss 0.01302 0.005726
+2022-01-21 15:54:52,081 root                INFO: Train: Epoch 162: train loss 0.0041
+2022-01-21 15:54:54,058 root                INFO: Valid: Epoch 162: kendall tau 0.4741 0.4912; loss 0.01277 0.005727
+2022-01-21 15:54:54,506 root                INFO: Train: Epoch 163: train loss 0.0040
+2022-01-21 15:54:56,716 root                INFO: Valid: Epoch 163: kendall tau 0.4707 0.5023; loss 0.01202 0.005726
+2022-01-21 15:54:57,177 root                INFO: Train: Epoch 164: train loss 0.0039
+2022-01-21 15:54:59,043 root                INFO: Valid: Epoch 164: kendall tau 0.4687 0.5205; loss 0.01174 0.005795
+2022-01-21 15:54:59,570 root                INFO: Train: Epoch 165: train loss 0.0039
+2022-01-21 15:55:01,501 root                INFO: Valid: Epoch 165: kendall tau 0.4693 0.5267; loss 0.01202 0.005686
+2022-01-21 15:55:02,047 root                INFO: Train: Epoch 166: train loss 0.0039
+2022-01-21 15:55:04,219 root                INFO: Valid: Epoch 166: kendall tau 0.4701 0.5094; loss 0.01269 0.005675
+2022-01-21 15:55:04,781 root                INFO: Train: Epoch 167: train loss 0.0038
+2022-01-21 15:55:06,911 root                INFO: Valid: Epoch 167: kendall tau 0.4694 0.4882; loss 0.01283 0.005777
+2022-01-21 15:55:07,419 root                INFO: Train: Epoch 168: train loss 0.0039
+2022-01-21 15:55:09,297 root                INFO: Valid: Epoch 168: kendall tau 0.4681 0.4792; loss 0.01238 0.005873
+2022-01-21 15:55:09,787 root                INFO: Train: Epoch 169: train loss 0.0037
+2022-01-21 15:55:11,908 root                INFO: Valid: Epoch 169: kendall tau 0.4676 0.4817; loss 0.01207 0.00597
+2022-01-21 15:55:12,393 root                INFO: Train: Epoch 170: train loss 0.0037
+2022-01-21 15:55:14,408 root                INFO: Valid: Epoch 170: kendall tau 0.4682 0.4898; loss 0.01208 0.005971
+2022-01-21 15:55:14,912 root                INFO: Train: Epoch 171: train loss 0.0036
+2022-01-21 15:55:17,576 root                INFO: Valid: Epoch 171: kendall tau 0.4702 0.5008; loss 0.01238 0.005887
+2022-01-21 15:55:18,246 root                INFO: Train: Epoch 172: train loss 0.0037
+2022-01-21 15:55:20,398 root                INFO: Valid: Epoch 172: kendall tau 0.4716 0.5138; loss 0.01255 0.005907
+2022-01-21 15:55:20,872 root                INFO: Train: Epoch 173: train loss 0.0038
+2022-01-21 15:55:23,233 root                INFO: Valid: Epoch 173: kendall tau 0.4722 0.5227; loss 0.01216 0.006027
+2022-01-21 15:55:23,768 root                INFO: Train: Epoch 174: train loss 0.0037
+2022-01-21 15:55:25,995 root                INFO: Valid: Epoch 174: kendall tau 0.4721 0.5244; loss 0.01162 0.006322
+2022-01-21 15:55:26,475 root                INFO: Train: Epoch 175: train loss 0.0035
+2022-01-21 15:55:28,361 root                INFO: Valid: Epoch 175: kendall tau 0.4739 0.5141; loss 0.01168 0.006344
+2022-01-21 15:55:28,954 root                INFO: Train: Epoch 176: train loss 0.0035
+2022-01-21 15:55:31,060 root                INFO: Valid: Epoch 176: kendall tau 0.4767 0.5008; loss 0.01215 0.006294
+2022-01-21 15:55:31,698 root                INFO: Train: Epoch 177: train loss 0.0035
+2022-01-21 15:55:33,667 root                INFO: Valid: Epoch 177: kendall tau 0.4788 0.5122; loss 0.01215 0.006344
+2022-01-21 15:55:34,140 root                INFO: Train: Epoch 178: train loss 0.0034
+2022-01-21 15:55:36,296 root                INFO: Valid: Epoch 178: kendall tau 0.4805 0.5253; loss 0.01168 0.006454
+2022-01-21 15:55:36,745 root                INFO: Train: Epoch 179: train loss 0.0034
+2022-01-21 15:55:38,753 root                INFO: Valid: Epoch 179: kendall tau 0.4818 0.5299; loss 0.01148 0.006566
+2022-01-21 15:55:39,232 root                INFO: Train: Epoch 180: train loss 0.0034
+2022-01-21 15:55:41,381 root                INFO: Valid: Epoch 180: kendall tau 0.4824 0.5220; loss 0.01155 0.006718
+2022-01-21 15:55:41,897 root                INFO: Train: Epoch 181: train loss 0.0032
+2022-01-21 15:55:43,754 root                INFO: Valid: Epoch 181: kendall tau 0.4835 0.5136; loss 0.01176 0.006842
+2022-01-21 15:55:44,238 root                INFO: Train: Epoch 182: train loss 0.0034
+2022-01-21 15:55:46,372 root                INFO: Valid: Epoch 182: kendall tau 0.4836 0.5242; loss 0.01153 0.007019
+2022-01-21 15:55:46,844 root                INFO: Train: Epoch 183: train loss 0.0032
+2022-01-21 15:55:48,989 root                INFO: Valid: Epoch 183: kendall tau 0.4838 0.5389; loss 0.01137 0.007173
+2022-01-21 15:55:49,738 root                INFO: Train: Epoch 184: train loss 0.0032
+2022-01-21 15:55:51,780 root                INFO: Valid: Epoch 184: kendall tau 0.4851 0.5472; loss 0.0115 0.007062
+2022-01-21 15:55:52,292 root                INFO: Train: Epoch 185: train loss 0.0031
+2022-01-21 15:55:54,494 root                INFO: Valid: Epoch 185: kendall tau 0.4852 0.5516; loss 0.01171 0.007057
+2022-01-21 15:55:55,063 root                INFO: Train: Epoch 186: train loss 0.0032
+2022-01-21 15:55:56,927 root                INFO: Valid: Epoch 186: kendall tau 0.4831 0.5553; loss 0.01155 0.007349
+2022-01-21 15:55:57,404 root                INFO: Train: Epoch 187: train loss 0.0030
+2022-01-21 15:55:59,628 root                INFO: Valid: Epoch 187: kendall tau 0.4810 0.5533; loss 0.01144 0.007659
+2022-01-21 15:56:00,066 root                INFO: Train: Epoch 188: train loss 0.0031
+2022-01-21 15:56:02,001 root                INFO: Valid: Epoch 188: kendall tau 0.4810 0.5413; loss 0.01175 0.007502
+2022-01-21 15:56:02,491 root                INFO: Train: Epoch 189: train loss 0.0029
+2022-01-21 15:56:04,720 root                INFO: Valid: Epoch 189: kendall tau 0.4823 0.5381; loss 0.01184 0.00741
+2022-01-21 15:56:05,213 root                INFO: Train: Epoch 190: train loss 0.0033
+2022-01-21 15:56:07,215 root                INFO: Valid: Epoch 190: kendall tau 0.4750 0.5884; loss 0.01146 0.00908
+2022-01-21 15:56:07,767 root                INFO: Train: Epoch 191: train loss 0.0044
+2022-01-21 15:56:09,944 root                INFO: Valid: Epoch 191: kendall tau 0.4768 0.6049; loss 0.01275 0.006837
+2022-01-21 15:56:10,424 root                INFO: Train: Epoch 192: train loss 0.0034
+2022-01-21 15:56:12,390 root                INFO: Valid: Epoch 192: kendall tau 0.4834 0.5989; loss 0.01417 0.006659
+2022-01-21 15:56:13,052 root                INFO: Train: Epoch 193: train loss 0.0037
+2022-01-21 15:56:15,138 root                INFO: Valid: Epoch 193: kendall tau 0.4886 0.6115; loss 0.01201 0.006169
+2022-01-21 15:56:15,732 root                INFO: Train: Epoch 194: train loss 0.0031
+2022-01-21 15:56:17,605 root                INFO: Valid: Epoch 194: kendall tau 0.4897 0.6262; loss 0.01018 0.00573
+2022-01-21 15:56:18,107 root                INFO: Train: Epoch 195: train loss 0.0036
+2022-01-21 15:56:19,993 root                INFO: Valid: Epoch 195: kendall tau 0.4884 0.6249; loss 0.01003 0.005795
+2022-01-21 15:56:20,395 root                INFO: Train: Epoch 196: train loss 0.0036
+2022-01-21 15:56:22,636 root                INFO: Valid: Epoch 196: kendall tau 0.4856 0.6054; loss 0.01117 0.006076
+2022-01-21 15:56:23,105 root                INFO: Train: Epoch 197: train loss 0.0030
+2022-01-21 15:56:25,356 root                INFO: Valid: Epoch 197: kendall tau 0.4805 0.5720; loss 0.01296 0.006552
+2022-01-21 15:56:25,845 root                INFO: Train: Epoch 198: train loss 0.0030
+2022-01-21 15:56:27,910 root                INFO: Valid: Epoch 198: kendall tau 0.4753 0.5648; loss 0.01359 0.006959
+2022-01-21 15:56:28,364 root                INFO: Train: Epoch 199: train loss 0.0031
+2022-01-21 15:56:30,495 root                INFO: Valid: Epoch 199: kendall tau 0.4718 0.5860; loss 0.01265 0.007325
+2022-01-21 15:56:30,953 root                INFO: Train: Epoch 200: train loss 0.0030
+2022-01-21 15:56:32,794 root                INFO: Valid: Epoch 200: kendall tau 0.4718 0.6088; loss 0.01165 0.007383
+2022-01-21 15:56:32,803 root                INFO: Epoch 200: Save checkpoint to nb1shot1_anytime_tagates/tagates_0.05/1/202121/200.ckpt
+2022-01-21 15:56:34,609 root                INFO: [0.14285714285714285, 0.1111111111111111, 0.06944444444444445, 0.21428571428571427, 0.31550068587105623, 0.7481481481481481, 1.0]
+2022-01-21 15:56:34,610 root                INFO: [0.14285714285714285, 0.2777777777777778, 0.4166666666666667, 0.5989010989010989, 0.6625514403292181, 0.8159122085048011, 1.0]
+2022-01-21 15:56:34,610 root                INFO: [6, 6]
+2022-01-21 15:56:34,610 root                INFO: [2, 2]
