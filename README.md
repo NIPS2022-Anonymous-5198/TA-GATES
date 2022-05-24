@@ -43,3 +43,8 @@ To evaluate the anytime performance of TA-GATES with a training proportion 10%, 
 ```sh
 $ python scripts/train_nasbench301_anytime.py cfgs/nb301_cfgs/tagates_anytime.yaml --gpu 0 --seed [random seed] --train-dir results/nb301_tagates_anytime_tr1e-1/ --save-every  200 --eval-only-last 5 --train-pkl data/nasbench-301/nasbench301_train_mtx_anytime_1.pkl --valid-pkl data/nasbench-301/nasbench301_valid_mtx_anytime.pkl --train-ratio 0.1
 ```
+
+## License
+The codes of NAS-Bench-101 and NAS-Bench-301 are licensed Apache 2.0, and the code of NAS-Bench-201 is licensed MIT.
+
+Our code here is licensed Apache 2.0.
