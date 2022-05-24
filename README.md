@@ -46,5 +46,3 @@ $ python scripts/train_nasbench301_anytime.py cfgs/nb301_cfgs/tagates_anytime.ya
 
 ## License
 The codes of NAS-Bench-101 and NAS-Bench-301 are licensed Apache 2.0, and the code of NAS-Bench-201 is licensed MIT.
-
-Our code here is licensed Apache 2.0.
